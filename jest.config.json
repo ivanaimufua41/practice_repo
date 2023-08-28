@@ -1,0 +1,19 @@
+{
+    "verbose": true,
+    "testEnvironment": "jsdom",
+    "transform": {
+        "^.+\\.[t|j]sx?$": "babel-jest",
+        "^.+\\.svg$": "<rootDir>/mocks/svgTransform.js"
+    },
+    "moduleNameMapper": {
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mocks/fileMock.js",
+        "\\.(css|less)$": "<rootDir>/mocks/styleMock.js"
+    },
+    "moduleDirectories": [
+        "./node_modules",
+        "src"
+    ],
+    "setupFilesAfterEnv": [
+        "./src/setupTests.js"
+    ]
+}
